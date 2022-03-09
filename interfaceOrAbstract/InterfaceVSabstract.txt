@@ -1,0 +1,3 @@
+Uma interface não pode conter qualquer tipo de código, muito menos código padrão.
+
+Uma classe abstrata pode fornecer código completo, código padrão ou ter apenas a declaração de seu esqueleto para ser posteriormente sobrescrita.
