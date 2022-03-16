@@ -1,0 +1,45 @@
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
+
+public class App {
+    public static void exibirAlunos(String turma, String[] vetor, int contador) {
+        System.out.println("\nAlunos da " + turma + ":");
+        for (int i = 0; i < contador; i++) {
+            System.out.println(vetor[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        String[] turma1 = new String[10];
+        String[] turma2 = new String[10];
+        int contador1 = 0;
+        int contador2 = 0;
+
+        Scanner leitor = new Scanner(System.in);
+
+        String alunoDaVez = "";
+        String turmaDaVez = "";
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Digite o nome do aluno: ");
+            alunoDaVez = leitor.next();
+            System.out.println("Digite a turma do aluno:");
+            turmaDaVez = leitor.next();
+
+            if (turmaDaVez.equalsIgnoreCase("T1")) {
+                turma1[i] = alunoDaVez;
+                contador1++;
+            } else {
+                turma2[i] = alunoDaVez;
+                contador2++;
+            }
+        }
+
+        Arrays.sort(turma1,Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER));
+        Arrays.sort(turma2,Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER));
+
+        exibirAlunos("turma 1", turma1, contador1);
+        exibirAlunos("turma 2", turma2, contador2);
+    }
+}
