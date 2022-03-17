@@ -1,1 +1,65 @@
 
+public class ListaEstatica {
+    
+    private int nroElem;
+    private int[] vetor;
+
+    public ListaEstatica(int tam) {
+        this.nroElem = 0;
+        this.vetor = new int[tam];
+    }
+
+    public void adiciona(int elemento) {
+        if (nroElem >= vetor.length) {
+            System.out.println("Não foi possível adicionar este elemento pois a lista está cheia!");
+        } else {
+            vetor[nroElem] = elemento;
+            nroElem++;
+            System.out.println("Elemento " + elemento + " adicionado com sucesso!");
+        }
+    }
+    
+    public void exibeTodos() {
+        for (int i = 0; i < nroElem; i++) {
+            System.out.println(vetor[nroElem]);
+        }
+    }
+    
+    public int busca() {
+        // Recebe o elemento a ser procurado
+        // Devolve o índice do vetor onde está o elemento ou -1 se não encontrou
+    }
+        
+    public boolean removePeloIndice() {
+        // Recebe o índice do elemento a ser removido
+        // Devolve true se removeu ou false se indíce inválido
+    }
+            
+    public boolean removeElemento() {
+        // Recebe o elemento a ser removido
+        // Procura o elemento a ser removido
+        // Devolve true se removeu e false se não encontrou
+    }
+}
+
+
+
+
+
+
+
+
+
+______________________________________________________________________________________________________________-
+
+
+
+public class AppTeste {
+    public static void main(String[] args) {
+        ListaEstatica lista = new ListaEstatica(5);
+        lista.adiciona(10);
+        lista.adiciona(30);
+        lista.adiciona(40);
+        lista.adiciona(50);
+    }
+}
