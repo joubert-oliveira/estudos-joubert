@@ -31,6 +31,7 @@ public class ListaEstatica {
     }
         
     public boolean removePeloIndice() {
+        // Verificar se o índice é valido
         // Recebe o índice do elemento a ser removido
         // Devolve true se removeu ou false se indíce inválido
     }
