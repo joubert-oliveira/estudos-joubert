@@ -1,0 +1,56 @@
+1)	Analise a tela de comunicação proposta (desenho acima) e detalhe pelo menos 3 itens não estão conforme as boas práticas, não esqueça de JUSTIFICAR (20%).
+
+O campo de contatos na qual há uma lista tanto de contados do paciente, quanto dos médicos de plantão estão muito próximos e ocupando muito espaço da tela, 
+seria melhor se o espaço fosse melhor aproveitado deixando poucos contatos (no máximo uns 2) e somente os médicos que realmente estão trabalhando no momento, 
+mas também limitando a quantidade que aparecem na tela. Como foi dito, os pacientes provavelmente estarão em situações que dificultará a utilização de aparelhos 
+eletrônicos por conta da deficiência situacional ou temporária. Logo, quanto mais elementos na tela, mais difícil será o manuseio da ferramenta.
+O botão de menu está muito pequeno comparado a logotipo do projeto, isso vai contra as boas práticas, pois as mesmas deveriam ter pelo menos o mesmo tamanho, 
+ajudando assim a persona a utilizar o projeto, vale lembrar que a interface deve ser intuitiva e bem fácil de ser utilizada por conta das restrições causadas
+pela deficiência situacional OU temporária das personas.
+O chat não é essencial neste momento em questão, estamos no começo de uma pandemia e as pessoas que estão sendo atendidas nos hospitais de plantão estão internadas
+e respirando por meio de cilindros de oxigênio, as pessoas não podem andar, correr ou pular, elas estão deitadas e recebendo medicamento o tempo todo. Isso tudo 
+leva a uma deficiência que impossibilita que a grande maioria dos pacientes utilizem o canal de chat para conversar, seria muito melhor se esse campo fosse 
+retirado e fosse utilizado somente a comunicação por chamada de vídeo. Alguns pacientes podem estar aptos a utilizar o chat, então o chat pode existir, mas 
+que fosse como um pop-up, abrindo e fechando por meio de um botão que ficaria ao lado de “Menu” ou até mesmo dentro dele.
+O texto de “Contatos”, “Chat” e “Paciente” estão com fontes que não são recomendadas conforme as boas práticas, as fontes utilizadas são muito ‘decorativas’
+com cantos arredondados e com uma fonte mais desenhada. As pessoas podem ter dificuldades para ler qual seção é qual, como por exemplo “Contatos” que além
+de estar utilizando essa fonte arredondada, também está muito próximo com a caixa dos contatos, uma pessoa que está deitada, internada e com pouca visibilidade 
+pode ter sérios problemas para utilizar o software.
+
+
+2)	Explique o pode ser alterado (melhorado, corrigido) no desenho acima para garantir a usabilidade da solução para as personas definidas, ou seja, elas precisam conseguir utilizar. (Pelo menos 3 itens) (30%)
+
+Diminuir a quantidade de contatos e médicos na seção de “Contatos”, porque há aglomeração de informações para que as personas leiam e saibam qual elas querem 
+chamar/ligar na hora. Diminuindo essa quantidade para 2 ou no máximo 3 contatos familiares e 2 ou 3 médicos que estão de plantão no atendimento. 
+Alterar a fonte utilizada em “Contatos”, “Chat” e “Paciente” para uma forma que seja melhor de ler, vale lembrar que os pacientes estão deitados e a grande 
+maioria devem ser pessoas idosas, o que leva a uma persona que quase sempre tem problemas de visão, enxergando apenas com óculos com nível alto de grau nas lentes.
+Na parte esquerda da tela, a foto da persona poderia ser um pouco maior e alinhada com os dois espaços em branco. O Nome pode continuar sendo completo, mas
+não há necessidade de colocar o estado civil do paciente. 
+
+
+4)	Agora que você desenhou, JUSTIFICAR cada item. (20%). (3 justificativas)
+Dicas: Lembre-se de considerar os requisitos que foram passados no enunciado, fazer uma relação com o requisito ajudará no entendimento.
+O diretor da área de software estará na reunião.
+
+Para o Mobile App, eu escolhi o Kotlin porque ele é bem parecido com o Java, que seria a aplicação web, e também porque ele é para o desenvolvimento de 
+aplicativos para Android, é uma linguagem de fácil aprendizado, fácil e moderna, não necessitando de uma equipe muito íntima com ele.
+Para o microservice, escolhi o SpringBoot porque ele seria o responsável por conectar o banco de dados com os dados que vem de todas as partes da aplicação. 
+A aplicação irá acionar o alerta no celular e quem fará essa comunicação será o SpringBoot. Utilizando o protocolo HTTP e criando uma API REST, 
+seria um projeto com uma parte não tão complicada e de fácil manutenção no futuro, mesmo tendo 1 ano para ser desenvolvida.
+O banco de Dados escolhi o Microsoft Azure por ser escalável e não muito caro, e é claro que um sistema como esse precisa de um banco robusto e confiável,
+pois é uma aplicação que vai rodar e manter pessoas vivas, até porque vivemos em uma época de pandemia, aonde uma pequena inconsistência de sistemas pode 
+causar em inúmeras mortes.
+O respirador fabricado na China funcionará de maneira normal, mas caso haja alguma falha no seu funcionamento, a aplicação irá detectar, e acionar
+um alerta no APP ANDROID desenvolvido em Kotlin, avisando aos médicos e enfermeiros que o respirador localizado no andar X, no quarto X está com problemas 
+e que o paciente precisará de atendimento humano.
+A aplicação Java que irá detectar o funcionamento incorreto do respirador, sendo a tecnologia responsável por tomar a primeira atitude logo após a falha.
+
+
+5)	Você tem alguma solução adicional que entende que poderia agregar valor ao projeto? Em outras palavras, há alguma inovação ou funcionalidade adicional 
+que você poderia propor? Se sim, cite e explique. Aqui você tem um papel em branco, mas precisa ter relação com a disciplina de Engenharia de Software.
+
+
+Eu adicionaria um sistema que também faz um tipo de monitoramento, mas dessa vez ele iria chegar o estado do paciente, como nível de açúcar no 
+sangue por exemplo, pressão arterial, temperatura corporal... Isso seria monitorado, mas não seria mostrado ao paciente, mas sim a uma Dashboard 
+na qual somente médicos e enfermeiros teriam acesso. Assim, podendo ter um melhor controle do que está acontecendo com cada um dos pacientes, mas 
+de maneira individual.
