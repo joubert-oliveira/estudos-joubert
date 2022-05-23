@@ -1,0 +1,5 @@
+package c201211072joycecristynasalvinasilva.c201211072joycecristynasalvinasilva.controller;
+
+class UsuarioControllerTest {
+
+}
