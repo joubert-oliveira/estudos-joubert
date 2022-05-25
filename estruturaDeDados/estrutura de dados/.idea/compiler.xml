@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alunos" target="11" />
+      <module name="andre-ac1" target="11" />
+      <module name="carrinho" target="11" />
+      <module name="exemplo-arquivo-csv" target="11" />
+      <module name="exemplo-escola" target="11" />
+      <module name="exemplo-escola-atualizado" target="11" />
+      <module name="exemplo-excecao" target="11" />
+      <module name="exemplo-funcionario" target="11" />
+      <module name="exemplo-imovel" target="11" />
+      <module name="exemplo-interface" target="11" />
+      <module name="exemplo-ordenacao" target="11" />
+      <module name="exemplo-saida-formatada" target="11" />
+      <module name="exemplo-vetor" target="11" />
+      <module name="exercicio-turma" target="11" />
+      <module name="exercicios" target="11" />
+      <module name="exercicios-lista-estatica" target="11" />
+      <module name="exercicios-saida-formatada" target="11" />
+      <module name="lista-estatica" target="11" />
+      <module name="lista-estatica-generica" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

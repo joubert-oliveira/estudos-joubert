@@ -1,0 +1,7 @@
++
+00NOTA2022120-04-2022 18:15:1401
+02ADS  01211061Isaque Silva                                      Estrutura de Dados                      09,00005
+02ADS  01211005André Prieto                                      Programação WEB                         07,50008
+02CCO  02211000Pedro Bochelli                                    Cálculo Computacional                   07,00015
+02REDES04211030José Teixeira                                     Segurança                               08,00007
+010000000004

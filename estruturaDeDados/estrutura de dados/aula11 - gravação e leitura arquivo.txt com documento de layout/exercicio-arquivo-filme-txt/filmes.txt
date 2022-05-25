@@ -1,0 +1,6 @@
+00FILME20-04-2022 21:10:0001
+0200000001Titanic                  09,9Romance           25
+0200000002Como eu era antes de você10,0Romance           06
+0200000003A cinco passos de você   09,9Drama             03
+0200000004365 days                 09,9Drama             02
+0100004
